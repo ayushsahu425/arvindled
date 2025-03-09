@@ -452,8 +452,7 @@
             });
         }
 
-        //>> Project Slider Start <<//
-        if($('.project-slider').length > 0) {
+        if ($('.project-slider').length > 0) {
             const projectSlider = new Swiper(".project-slider", {
                 spaceBetween: 30,
                 speed: 1000,
@@ -488,6 +487,16 @@
                     },
                 },
             });
+        
+            // Pause autoplay on hover
+            $('.project-slider .swiper-slide').hover(
+                function () {
+                    projectSlider.autoplay.stop();
+                },
+                function () {
+                    projectSlider.autoplay.start();
+                }
+            );
         }
 
         //>>Background image Start <<//

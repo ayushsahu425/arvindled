@@ -1401,8 +1401,8 @@ input.main-search-input::placeholder {
   color: var(--white);
 }
 .header-5 .mega-menu-wrapper .header-main .header-right .sidebar__toggle {
-  width: 55px;
-  height: 55px;
+  width: 80px;
+  height: 80px;
   line-height: 55px;
   text-align: center;
   background-color: var(--bg2);

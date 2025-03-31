@@ -348,39 +348,7 @@
                                        
                                       
                                         <style>
-                                            #customers {
-                                              font-family: Arial, Helvetica, sans-serif;
-                                              border-collapse: collapse;
-                                              width: 100%;
-                                            }
-                                            
-                                            #customers td, #customers th {
-                                              border: 1px solid #ddd;
-                                              padding: 8px;
-                                              text-align: center;
-                                            }
-                                            
-                                            #customers tr:nth-child(even){background-color: #f2f2f2;}
-                                            
-                                            #customers tr:hover {background-color: #ddd;}
-                                            
-                                            #customers th {
-                                              padding-top: 12px;
-                                              padding-bottom: 12px;
-                                              text-align: center;
-                                              background-color: #04AA6D;
-                                              color: white;
-                                            }
-                                            
-                                            .list-items {
-                                              display: none; /* Initially hidden */
-                                              margin-top: 10px; /* Add some space above the table */
-                                            }
-                                            
-                                            #toggleButton {
-                                              cursor: pointer;
-                                              display: block; /* Ensure button is visible initially */
-                                            }
+                                           
                                             </style>
                                             
                                             
@@ -389,154 +357,7 @@
                                             <!-- <button id="toggleButton" onclick="toggleTable()">See Specifications</button> -->
                                             <a id="toggleButton" onclick="toggleTable()" class="theme-btn text-center w-100 mb-3"> Download Specification</a>
                                             
-                                            <div class="list-items hide-items">
-                                                <table id="customers">
-                                                    <tr>
-                                                        <th>Product Model</th>
-                                                        <th>ZR-IR-P2.6</th>
-                                                        <th>ZR-IR-P2.9</th>
-                                                        <th>ZR-IR-P3.9</th>
-                                                        <th>ZR-OR-P2.9</th>
-                                                        <th>ZR-OR-P3.9</th>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Pixel Pitch</td>
-                                                        <td>2.6mm</td>
-                                                        <td>2.976mm</td>
-                                                        <td>3.9mm</td>
-                                                        <td>2.976mm</td>
-                                                        <td>3.9mm</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>LED Configuration</td>
-                                                        <td>SMD1515</td>
-                                                        <td>SMD2121</td>
-                                                        <td>SMD2121</td>
-                                                        <td>SMD1415</td>
-                                                        <td>SMD1415</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Module Size</td>
-                                                        <td>250x250mm</td>
-                                                        <td>250x250mm</td>
-                                                        <td>250x250mm</td>
-                                                        <td>250x250mm</td>
-                                                        <td>250x250mm</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Module Resolution</td>
-                                                        <td>96x96 dots</td>
-                                                        <td>84x84 dots</td>
-                                                        <td>64x64 dots</td>
-                                                        <td>84x84 dots</td>
-                                                        <td>64x64 dots</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Cabinet Size</td>
-                                                        <td>500x500mm / 500x1000mm</td>
-                                                        <td>500x500mm / 500x1000mm</td>
-                                                        <td>500x500mm / 500x1000mm</td>
-                                                        <td>500x500mm / 500x1000mm</td>
-                                                        <td>500x500mm / 500x1000mm</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Cabinet Resolution</td>
-                                                        <td>192x192 dots / 192x384 dots</td>
-                                                        <td>168x168 dots / 168x336 dots</td>
-                                                        <td>128x128 dots / 128x256 dots</td>
-                                                        <td>168x168 dots / 168x336 dots</td>
-                                                        <td>128x128 dots / 128x256 dots</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Pixel Density</td>
-                                                        <td>147,456 dots/m²</td>
-                                                        <td>112,896 dots/m²</td>
-                                                        <td>65,536 dots/m²</td>
-                                                        <td>112,896 dots/m²</td>
-                                                        <td>65,536 dots/m²</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Scan</td>
-                                                        <td>1/32</td>
-                                                        <td>1/21</td>
-                                                        <td>1/16</td>
-                                                        <td>1/14</td>
-                                                        <td>1/16</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Brightness</td>
-                                                        <td>800 nits</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>4500 nits</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Power Consumption</td>
-                                                        <td>Max. 600W/m², Ave. 200W/m²</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>Max. 800W/m², Ave. 300W/m²</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>IP Rating</td>
-                                                        <td>Indoor IP30</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>Outdoor IP65</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Refresh Rate</td>
-                                                        <td>3840Hz</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Cabinet Material</td>
-                                                        <td>Die-casting Aluminum</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Maintenance Way</td>
-                                                        <td>Module can be Front & Rear</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Viewing Angle</td>
-                                                        <td>140°/140°</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Operating Voltage</td>
-                                                        <td>AC 110-240V</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>Working Environment</td>
-                                                        <td>-10°C to +60°C, 10%-90%RH</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                      </tr>
-                                                </table>
-                                            </div>
+                                           
                                             
                                             <script>
                                             function toggleTable() {
@@ -560,6 +381,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-12 col-lg-4">
                             <div class="main-sidebar">
@@ -602,14 +424,161 @@
                         </div>
                        
                     </div>
-                    
+                    <div class="list-items hide-items">
+                        <table id="customers">
+                            <tr>
+                                <th>Product Model</th>
+                                <th>ZR-IR-P2.6</th>
+                                <th>ZR-IR-P2.9</th>
+                                <th>ZR-IR-P3.9</th>
+                                <th>ZR-OR-P2.9</th>
+                                <th>ZR-OR-P3.9</th>
+                              </tr>
+                              <tr>
+                                <td>Pixel Pitch</td>
+                                <td>2.6mm</td>
+                                <td>2.976mm</td>
+                                <td>3.9mm</td>
+                                <td>2.976mm</td>
+                                <td>3.9mm</td>
+                              </tr>
+                              <tr>
+                                <td>LED Configuration</td>
+                                <td>SMD1515</td>
+                                <td>SMD2121</td>
+                                <td>SMD2121</td>
+                                <td>SMD1415</td>
+                                <td>SMD1415</td>
+                              </tr>
+                              <tr>
+                                <td>Module Size</td>
+                                <td>250x250mm</td>
+                                <td>250x250mm</td>
+                                <td>250x250mm</td>
+                                <td>250x250mm</td>
+                                <td>250x250mm</td>
+                              </tr>
+                              <tr>
+                                <td>Module Resolution</td>
+                                <td>96x96 dots</td>
+                                <td>84x84 dots</td>
+                                <td>64x64 dots</td>
+                                <td>84x84 dots</td>
+                                <td>64x64 dots</td>
+                              </tr>
+                              <tr>
+                                <td>Cabinet Size</td>
+                                <td>500x500mm / 500x1000mm</td>
+                                <td>500x500mm / 500x1000mm</td>
+                                <td>500x500mm / 500x1000mm</td>
+                                <td>500x500mm / 500x1000mm</td>
+                                <td>500x500mm / 500x1000mm</td>
+                              </tr>
+                              <tr>
+                                <td>Cabinet Resolution</td>
+                                <td>192x192 dots / 192x384 dots</td>
+                                <td>168x168 dots / 168x336 dots</td>
+                                <td>128x128 dots / 128x256 dots</td>
+                                <td>168x168 dots / 168x336 dots</td>
+                                <td>128x128 dots / 128x256 dots</td>
+                              </tr>
+                              <tr>
+                                <td>Pixel Density</td>
+                                <td>147,456 dots/m²</td>
+                                <td>112,896 dots/m²</td>
+                                <td>65,536 dots/m²</td>
+                                <td>112,896 dots/m²</td>
+                                <td>65,536 dots/m²</td>
+                              </tr>
+                              <tr>
+                                <td>Scan</td>
+                                <td>1/32</td>
+                                <td>1/21</td>
+                                <td>1/16</td>
+                                <td>1/14</td>
+                                <td>1/16</td>
+                              </tr>
+                              <tr>
+                                <td>Brightness</td>
+                                <td>800 nits</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>4500 nits</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Power Consumption</td>
+                                <td>Max. 600W/m², Ave. 200W/m²</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Max. 800W/m², Ave. 300W/m²</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>IP Rating</td>
+                                <td>Indoor IP30</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Outdoor IP65</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Refresh Rate</td>
+                                <td>3840Hz</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Cabinet Material</td>
+                                <td>Die-casting Aluminum</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Maintenance Way</td>
+                                <td>Module can be Front & Rear</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Viewing Angle</td>
+                                <td>140°/140°</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Operating Voltage</td>
+                                <td>AC 110-240V</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>Working Environment</td>
+                                <td>-10°C to +60°C, 10%-90%RH</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             
         </section>
 
         <!-- Cta Section Start -->
-        <section class="cta-banner-section-2">
+        <!-- <section class="cta-banner-section-2">
             <div class="container">
                 <div class="cta-banner-wrapper-2">
                     <div class="cta-image wow fadeInUp" data-wow-delay=".3s">
@@ -631,7 +600,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
          <!-- Footer Section Start -->
          <footer class="footer-section footer-bg">
@@ -676,7 +645,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#service.html">
+                                        <a href="products.html">
                                             Products
                                         </a>
                                     </li>
@@ -790,7 +759,6 @@
                 </div>
             </div>
         </footer>
-
 
         <!--<< All JS Plugins >>-->
         <script src="assets/js/jquery-3.7.1.min.js"></script>

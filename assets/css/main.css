@@ -181,6 +181,9 @@ body {
   overflow-x: hidden;
 }
 
+.about-section1{ 
+  background-color: rgb(249, 245, 245);
+}
 ul {
   padding: 0;
   margin: 0;
@@ -9146,4 +9149,19 @@ p.sticky-label {
 #toggleButton {
   cursor: pointer;
   display: block; /* Ensure button is visible initially */
+}
+
+
+/* CSS to hide the image in desktop view and show in mobile view */
+
+/* Hide on desktop (and larger screens) by default */
+.hidden-image {
+  display: none;
+}
+
+/* Show on mobile devices (screen width 767px or less) */
+@media (max-width: 767px) {
+  .hidden-image {
+    display: block !important; /* Or any other appropriate display value like inline-block */
+  }
 }

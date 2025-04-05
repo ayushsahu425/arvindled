@@ -1,6 +1,7 @@
 .about-wrapper {
     margin-top: 45px;
-
+    // color: #ffffffb3;
+    
     .about-left-items {
         position: relative;
 
@@ -78,6 +79,7 @@
 
     .about-content {
         margin-left: 40px;
+        
 
         @include breakpoint (max-lg){
             margin-left: 0;
@@ -144,6 +146,8 @@
 .about-wrapper-2 {
     position: relative;
     z-index: 9;
+    
+
 
     .about-content {
         p {

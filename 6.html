@@ -282,7 +282,21 @@
             </div>
         </div>
         </div>
+        <style>
+            /* CSS to hide the image in desktop view and show in mobile view */
 
+/* Hide on desktop (and larger screens) by default */
+.hidden-image {
+  display: none;
+}
+
+/* Show on mobile devices (screen width 767px or less) */
+@media (max-width: 767px) {
+  .hidden-image {
+    display: block !important; /* Or any other appropriate display value like inline-block */
+  }
+}
+        </style>
         <!-- Service Details Section Start -->
         <section class="service-details-section fix section-padding">
             <div class="container">
